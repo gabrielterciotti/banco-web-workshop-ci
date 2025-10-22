@@ -22,15 +22,15 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Instalando as dependências
-        run: npm install
+        uses: npm install
 
       - name: Iniciando o servidor
-        run: npm run server &
+        uses: npm run server &
 
       - name: Iniciando o servidor de mock
-        run: npm run mock-server &
+        uses: npm run mock-server &
 
       - name: Iniciando o cypress
-        run: npx cypress run
+        uses: npx cypress run
     
     
